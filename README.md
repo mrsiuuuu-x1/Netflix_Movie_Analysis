@@ -29,6 +29,7 @@ This project performs an exploratory data analysis (EDA) on Netflix's movie cata
 - **Action Genre Filtering**: Isolates action films for specific analysis
 - **Short Movie Identification**: Finds action movies under 90 minutes
 - **Data Visualization**: Histogram showing duration distribution with labeled axes
+- **Content Type Visualization**: Bar chart showing the count of Movies vs TV Shows on Netflix using matplotlib/seaborn
 
 ## 🚀 Getting Started
 
@@ -85,6 +86,10 @@ The project includes:
   - X-axis: Duration in minutes
   - Y-axis: Number of movies
   - Title: "Distribution of Movie Durations in the 1990's"
+  - **Bar Chart**: Shows the number of Movies vs TV Shows on Netflix
+  - X-axis: Content Type (Movie or TV Show)
+  - Y-axis: Count
+  - Title: "Movies vs TV Shows on Netflix"
 
 ## 💡 Insights
 
