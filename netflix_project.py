@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 netflix_df = pd.read_csv("netflix_data.csv")
 
 import numpy as np
-
+import seaborn as sns
 
 # Filter for movies released in the 1990s
 mov_rel_1990s = np.logical_and(netflix_df['release_year'] >= 1990, netflix_df['release_year'] < 2000)
@@ -33,3 +33,21 @@ short_movies = sa_movies['duration'] < 90
 short_movies_count = short_movies.sum()
 
 print(short_movies_count)
+
+# visualizing the total number of TV Shows and Movies
+plt.figure(figsize=(8, 6))
+ax = sns.countplot(x='type', data=netflix_df)
+plt.title('Total Number of TV Shows and Movies on Netflix')
+plt.xlabel('Content Type')
+plt.ylabel('Count')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+
+# Annotate each bar with its count
+for p in ax.patches:
+    ax.annotate(
+        str(p.get_height()),
+        (p.get_x() + p.get_width() / 2., p.get_height()),
+        ha='center', va='bottom', fontsize=12, color='black', fontweight='bold'
+    )
+
+plt.show()
