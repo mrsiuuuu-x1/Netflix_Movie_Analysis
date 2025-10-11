@@ -86,7 +86,7 @@ The project includes:
   - X-axis: Duration in minutes
   - Y-axis: Number of movies
   - Title: "Distribution of Movie Durations in the 1990's"
-  - **Bar Chart**: Shows the number of Movies vs TV Shows on Netflix
+- **Bar Chart**: Shows the number of Movies vs TV Shows on Netflix
   - X-axis: Content Type (Movie or TV Show)
   - Y-axis: Count
   - Title: "Movies vs TV Shows on Netflix"
