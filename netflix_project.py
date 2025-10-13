@@ -19,6 +19,7 @@ plt.title('Distribution of Movie Durations in the 1990s')
 plt.xlabel('Duration (minutes)')
 plt.ylabel('Number of Movies')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.savefig('movie_duration_distribution_1990s.png')
 plt.show()
 
 # Store the duration column for later use
@@ -50,7 +51,7 @@ for p in ax.patches:
         (p.get_x() + p.get_width() / 2., p.get_height()),
         ha='center', va='bottom', fontsize=12, color='black', fontweight='bold'
     )
-
+plt.savefig('total_tv_shows_movies.png')
 plt.show()
 
 
@@ -64,6 +65,7 @@ plt.ylabel('Amount of Content')
 plt.xticks(rotation=45)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
+plt.savefig('content_per_year.png')
 plt.show()
 
 # Visualizing most common genres on Netflix
@@ -76,4 +78,5 @@ plt.ylabel('Number of Shows/Movies')
 plt.xticks(rotation=45)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
+plt.savefig('top_10_genres.png')
 plt.show()
