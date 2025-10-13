@@ -1,35 +1,39 @@
 # 🎬 Netflix Movie Analysis
 
-A Python-based data analysis project that explores Netflix movie durations from the 1990s, with a focus on identifying patterns in film length and discovering short action movies.
+A Python-based data analysis project that explores Netflix movie and TV show data, including durations, genres, and yearly trends.
 
 ## 📋 Project Overview
 
-This project performs an exploratory data analysis (EDA) on Netflix's movie catalog, specifically examining films released during the 1990s. Using pandas for data manipulation and matplotlib for visualization, the analysis investigates the distribution of movie durations and identifies trends in action films.
+This project performs exploratory data analysis (EDA) on Netflix's catalog, examining movies and TV shows by release year, duration, and genre. It uses pandas for data manipulation, matplotlib and seaborn for visualization, and NumPy for filtering.
 
 ## 🎯 Objectives
 
 - Analyze the duration distribution of Netflix movies from the 1990s
 - Identify and examine short action films in the dataset
 - Visualize patterns and trends in movie lengths
-- Provide insights into content characteristics from this era
+- Compare the total number of TV Shows and Movies on Netflix
+- Visualize the amount of content produced each year
+- Display the most common genres on Netflix
+- Provide insights into content characteristics from different eras
 
 ## 🛠️ Technologies Used
 
 - **Python** - Primary programming language
 - **pandas** - Data manipulation and analysis
 - **matplotlib.pyplot** - Data visualization and plotting
+- **seaborn** - Advanced data visualization
 - **NumPy** - Numerical computing and array operations
-- **VS Code** - Development environment
 
 ## 📊 Analysis Features
 
 - **Data Loading**: Reads Netflix data from CSV file using pandas
 - **1990s Movie Filtering**: Filters movies released between 1990-1999
-- **Duration Analysis**: Statistical examination of movie lengths
+- **Duration Analysis**: Histogram showing distribution of movie durations in the 1990s
 - **Action Genre Filtering**: Isolates action films for specific analysis
 - **Short Movie Identification**: Finds action movies under 90 minutes
-- **Data Visualization**: Histogram showing duration distribution with labeled axes
-- **Content Type Visualization**: Bar chart showing the count of Movies vs TV Shows on Netflix using matplotlib/seaborn
+- **Content Type Visualization**: Bar chart showing the count of Movies vs TV Shows on Netflix
+- **Yearly Content Trend**: Line graph showing the number of titles released each year
+- **Genre Popularity**: Bar chart of the top 10 most common genres on Netflix
 
 ## 🚀 Getting Started
 
@@ -40,6 +44,7 @@ Python 3.7+
 pandas
 matplotlib
 numpy
+seaborn
 ```
 
 ### Installation
@@ -52,7 +57,7 @@ cd Netflix_Movie_Analysis
 
 2. Install required packages:
 ```bash
-pip install pandas matplotlib numpy
+pip install pandas matplotlib numpy seaborn
 ```
 
 3. Run the analysis:
@@ -70,7 +75,7 @@ Netflix_Movie_Analysis/
 └── README.md               # Project documentation
 ```
 
-## 🔍 Key Findings
+## � Key Findings
 
 The analysis explores:
 - Movies released during the 1990s (1990-1999) from the Netflix catalog
@@ -79,17 +84,25 @@ The analysis explores:
 - Short action films (those under 90 minutes in length)
 - Data filtering techniques using pandas and NumPy
 
-## 📈 Visualizations
+## �📈 Visualizations
 
 The project includes:
 - **Histogram**: Distribution of movie durations in the 1990s
   - X-axis: Duration in minutes
   - Y-axis: Number of movies
-  - Title: "Distribution of Movie Durations in the 1990's"
-- **Bar Chart**: Shows the number of Movies vs TV Shows on Netflix
+  - Title: "Distribution of Movie Durations in the 1990s"
+- **Bar Chart**: Number of Movies vs TV Shows on Netflix
   - X-axis: Content Type (Movie or TV Show)
   - Y-axis: Count
-  - Title: "Movies vs TV Shows on Netflix"
+  - Title: "Total Number of TV Shows and Movies on Netflix"
+- **Line Graph**: Number of titles released each year
+  - X-axis: Release Year
+  - Y-axis: Amount of Content
+  - Title: "Number of Titles Released Each Year on Netflix"
+- **Bar Chart**: Top 10 most common genres on Netflix
+  - X-axis: Genre
+  - Y-axis: Number of Shows/Movies
+  - Title: "Top 10 Most Common Genres on Netflix"
 
 ## 💡 Insights
 
@@ -98,6 +111,8 @@ This analysis provides valuable insights into:
 - The prevalence of different film lengths
 - Patterns specific to action films
 - Content characteristics in Netflix's historical catalog
+- Trends in content production over the years
+- Popular genres on Netflix
 
 ## 🤝 Contributing
 
