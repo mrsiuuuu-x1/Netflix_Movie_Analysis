@@ -18,6 +18,7 @@ plt.hist(movies_90s_filter['duration'])
 plt.title('Distribution of Movie Durations in the 1990s')
 plt.xlabel('Duration (minutes)')
 plt.ylabel('Number of Movies')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.show()
 
 # Store the duration column for later use
@@ -50,4 +51,29 @@ for p in ax.patches:
         ha='center', va='bottom', fontsize=12, color='black', fontweight='bold'
     )
 
+plt.show()
+
+
+# Visualizing amount of content produced each year as a line graph
+plt.figure(figsize=(12, 6))
+year_counts = netflix_df['release_year'].value_counts().sort_index()
+plt.plot(year_counts.index, year_counts.values, marker='o', color='blue')
+plt.title('Number of Titles Released Each Year on Netflix')
+plt.xlabel('Release Year')
+plt.ylabel('Amount of Content')
+plt.xticks(rotation=45)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.show()
+
+# Visualizing most common genres on Netflix
+plt.figure(figsize=(12, 6))
+genre_counts = netflix_df['genre'].value_counts().head(10)
+sns.barplot(x=genre_counts.index, y=genre_counts.values, palette='viridis')
+plt.title('Top 10 Most Common Genres on Netflix')
+plt.xlabel('Genre')
+plt.ylabel('Number of Shows/Movies')
+plt.xticks(rotation=45)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
 plt.show()
