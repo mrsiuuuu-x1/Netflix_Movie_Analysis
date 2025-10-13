@@ -12,7 +12,7 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - Identify and examine short action films in the dataset
 - Visualize patterns and trends in movie lengths
 - Compare the total number of TV Shows and Movies on Netflix
-- Visualize the amount of content produced each year
+- Visualize the amount of content produced each year (line graph)
 - Display the most common genres on Netflix
 - Provide insights into content characteristics from different eras
 
@@ -31,7 +31,7 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - **Duration Analysis**: Histogram showing distribution of movie durations in the 1990s
 - **Action Genre Filtering**: Isolates action films for specific analysis
 - **Short Movie Identification**: Finds action movies under 90 minutes
-- **Content Type Visualization**: Bar chart showing the count of Movies vs TV Shows on Netflix
+- **Content Type Visualization**: Bar chart showing the count of Movies vs TV Shows on Netflix, with improved annotation
 - **Yearly Content Trend**: Line graph showing the number of titles released each year
 - **Genre Popularity**: Bar chart of the top 10 most common genres on Netflix
 
@@ -75,23 +75,14 @@ Netflix_Movie_Analysis/
 └── README.md               # Project documentation
 ```
 
-## � Key Findings
-
-The analysis explores:
-- Movies released during the 1990s (1990-1999) from the Netflix catalog
-- Distribution patterns of movie durations through histogram visualization
-- Action movies specifically and their duration characteristics
-- Short action films (those under 90 minutes in length)
-- Data filtering techniques using pandas and NumPy
-
-## �📈 Visualizations
+## 📈 Visualizations
 
 The project includes:
 - **Histogram**: Distribution of movie durations in the 1990s
   - X-axis: Duration in minutes
   - Y-axis: Number of movies
   - Title: "Distribution of Movie Durations in the 1990s"
-- **Bar Chart**: Number of Movies vs TV Shows on Netflix
+- **Bar Chart**: Number of Movies vs TV Shows on Netflix (with clear, non-overlapping annotations)
   - X-axis: Content Type (Movie or TV Show)
   - Y-axis: Count
   - Title: "Total Number of TV Shows and Movies on Netflix"
