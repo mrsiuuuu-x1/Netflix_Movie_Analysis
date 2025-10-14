@@ -18,6 +18,8 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - Count and display short action movies (less than 90 minutes)
 - Save all visualizations as PNG files for reporting/sharing
 - Provide insights into content characteristics from different eras
+- **NEW:** Visualize the top 10 directors with the most content on Netflix
+- **NEW:** Ensure y-axis values in director and genre bar charts are shown as integers for clarity
 
 ## 🛠️ Technologies Used
 
@@ -39,6 +41,8 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - **Yearly Content Trend**: Line graph showing the number of titles released each year
 - **Genre Popularity**: Bar chart of the top 10 most common genres on Netflix
 - **Automatic Saving**: All plots are saved as PNG files for easy sharing
+- **NEW:** Bar chart of the top 10 directors with the most content on Netflix
+- **NEW:** Integer-only y-axis ticks for genre and director bar charts for improved readability
 
 ## 🚀 Getting Started
 
@@ -99,6 +103,10 @@ The project includes:
   - X-axis: Genre
   - Y-axis: Number of Shows/Movies
   - Title: "Top 10 Most Common Genres on Netflix"
+- **Bar Chart**: Top 10 directors with the most content on Netflix
+  - X-axis: Director
+  - Y-axis: Number of Shows/Movies (integer ticks)
+  - Title: "Top 10 Directors with Most Content on Netflix"
 
 ## 💡 Insights
 
@@ -109,6 +117,7 @@ This analysis provides valuable insights into:
 - Content characteristics in Netflix's historical catalog
 - Trends in content production over the years
 - Popular genres on Netflix
+- **NEW:** Which directors have the most content available on Netflix
 
 ## 🤝 Contributing
 

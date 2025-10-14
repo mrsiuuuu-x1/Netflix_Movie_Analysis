@@ -104,3 +104,18 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.savefig('top_10_genres.png')
 plt.show()
+
+# Visualizing best directors on Netflix
+import matplotlib.ticker as ticker
+plt.figure(figsize=(12, 6))
+director_counts = netflix_df['director'].value_counts().head(10)
+ax = sns.barplot(x=director_counts.index, y=director_counts.values, palette='magma')
+plt.title('Top 10 Directors with Most Content on Netflix')
+plt.xlabel('Director')
+plt.ylabel('Number of Shows/Movies')
+plt.xticks(rotation=45)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))  # <-- Add this line
+plt.savefig('top_10_directors.png')
+plt.show()
