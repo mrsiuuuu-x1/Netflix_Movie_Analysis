@@ -13,13 +13,37 @@ mov_rel_1990s = np.logical_and(netflix_df['release_year'] >= 1990, netflix_df['r
 movies_1990s = netflix_df['type'] == 'Movie'
 movies_90s_filter = netflix_df[np.logical_and(mov_rel_1990s, movies_1990s)]
 
-# Visualize the duration column to see the distribution
+# Visualizing the distribution of movie durations
+plt.figure(figsize=(10, 6))
+plt.hist(netflix_df[netflix_df['type'] == 'Movie']['duration'].dropna(), bins=30, color='skyblue', edgecolor='black')
+plt.title('Distribution of Movie Durations on Netflix')
+plt.xlabel('Duration (minutes)')
+plt.ylabel('Number of Movies')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig('movie_duration_distribution.png')
+plt.show()
+
+# Visualize the duration column to see the distribution of the 1990s decade
+plt.figure(figsize=(10, 6))
 plt.hist(movies_90s_filter['duration'])
 plt.title('Distribution of Movie Durations in the 1990s')
 plt.xlabel('Duration (minutes)')
 plt.ylabel('Number of Movies')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.savefig('movie_duration_distribution_1990s.png')
+plt.show()
+
+#Visualizing the duration column to see the distribution of the 2010s decade
+mov_rel_2010s = np.logical_and(netflix_df['release_year'] >= 2010, netflix_df['release_year'] < 2020)
+movies_2010s_filter = netflix_df[np.logical_and(mov_rel_2010s, movies_1990s)]
+plt.figure(figsize=(10, 6))
+plt.hist(movies_2010s_filter['duration'])
+plt.title('Distribution of Movie Durations in the 2010s')
+plt.xlabel('Duration (minutes)')
+plt.ylabel('Number of Movies')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.savefig('movie_duration_distribution_2010s.png')
 plt.show()
 
 # Store the duration column for later use

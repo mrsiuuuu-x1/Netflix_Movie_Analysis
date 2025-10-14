@@ -14,6 +14,9 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - Compare the total number of TV Shows and Movies on Netflix
 - Visualize the amount of content produced each year (line graph)
 - Display the most common genres on Netflix
+- Visualize the distribution of movie durations in the 2010s
+- Count and display short action movies (less than 90 minutes)
+- Save all visualizations as PNG files for reporting/sharing
 - Provide insights into content characteristics from different eras
 
 ## 🛠️ Technologies Used
@@ -28,12 +31,14 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 
 - **Data Loading**: Reads Netflix data from CSV file using pandas
 - **1990s Movie Filtering**: Filters movies released between 1990-1999
-- **Duration Analysis**: Histogram showing distribution of movie durations in the 1990s
+- **2010s Movie Filtering**: Filters movies released between 2010-2019
+- **Duration Analysis**: Histograms showing distribution of movie durations for all movies, 1990s, and 2010s
 - **Action Genre Filtering**: Isolates action films for specific analysis
-- **Short Movie Identification**: Finds action movies under 90 minutes
+- **Short Movie Identification**: Finds and counts action movies under 90 minutes
 - **Content Type Visualization**: Bar chart showing the count of Movies vs TV Shows on Netflix, with improved annotation
 - **Yearly Content Trend**: Line graph showing the number of titles released each year
 - **Genre Popularity**: Bar chart of the top 10 most common genres on Netflix
+- **Automatic Saving**: All plots are saved as PNG files for easy sharing
 
 ## 🚀 Getting Started
 
@@ -78,10 +83,10 @@ Netflix_Movie_Analysis/
 ## 📈 Visualizations
 
 The project includes:
-- **Histogram**: Distribution of movie durations in the 1990s
+- **Histogram**: Distribution of movie durations for all movies, 1990s, and 2010s
   - X-axis: Duration in minutes
   - Y-axis: Number of movies
-  - Title: "Distribution of Movie Durations in the 1990s"
+  - Titles: "Distribution of Movie Durations on Netflix", "Distribution of Movie Durations in the 1990s", "Distribution of Movie Durations in the 2010s"
 - **Bar Chart**: Number of Movies vs TV Shows on Netflix (with clear, non-overlapping annotations)
   - X-axis: Content Type (Movie or TV Show)
   - Y-axis: Count
@@ -98,9 +103,9 @@ The project includes:
 ## 💡 Insights
 
 This analysis provides valuable insights into:
-- How movie durations varied during the 1990s
+- How movie durations varied during the 1990s and 2010s
 - The prevalence of different film lengths
-- Patterns specific to action films
+- Patterns specific to action films and short movies
 - Content characteristics in Netflix's historical catalog
 - Trends in content production over the years
 - Popular genres on Netflix
