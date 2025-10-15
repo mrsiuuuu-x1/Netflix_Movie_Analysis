@@ -27,7 +27,7 @@ plt.show()
 
 # Visualize the duration column to see the distribution of the 1990s decade
 plt.figure(figsize=(10, 6))
-plt.hist(movies_90s_filter['duration'])
+plt.hist(movies_90s_filter['duration'],color='skyblue', edgecolor='black')
 plt.title('Distribution of Movie Durations in the 1990s')
 plt.xlabel('Duration (minutes)')
 plt.ylabel('Number of Movies')
@@ -39,7 +39,7 @@ plt.show()
 mov_rel_2010s = np.logical_and(netflix_df['release_year'] >= 2010, netflix_df['release_year'] < 2020)
 movies_2010s_filter = netflix_df[np.logical_and(mov_rel_2010s, movies_1990s)]
 plt.figure(figsize=(10, 6))
-plt.hist(movies_2010s_filter['duration'])
+plt.hist(movies_2010s_filter['duration'],color='skyblue', edgecolor='black')
 plt.title('Distribution of Movie Durations in the 2010s')
 plt.xlabel('Duration (minutes)')
 plt.ylabel('Number of Movies')
@@ -63,7 +63,7 @@ print(short_movies_count)
 
 # visualizing the total number of TV Shows and Movies
 plt.figure(figsize=(8, 6))
-ax = sns.countplot(x='type', data=netflix_df)
+ax = sns.countplot(x='type', data=netflix_df, color='skyblue', edgecolor='black')
 plt.title('Total Number of TV Shows and Movies on Netflix')
 plt.xlabel('Content Type')
 plt.ylabel('Count')
