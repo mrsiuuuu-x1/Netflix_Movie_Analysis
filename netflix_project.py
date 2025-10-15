@@ -1,6 +1,7 @@
 # Importing pandas and matplotlib
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 
 # Read in the Netflix CSV as a DataFrame
 netflix_df = pd.read_csv("netflix_data.csv")
@@ -106,7 +107,6 @@ plt.savefig('top_10_genres.png')
 plt.show()
 
 # Visualizing best directors on Netflix
-import matplotlib.ticker as ticker
 plt.figure(figsize=(12, 6))
 director_counts = netflix_df['director'].value_counts().head(10)
 ax = sns.barplot(x=director_counts.index, y=director_counts.values, palette='magma')
