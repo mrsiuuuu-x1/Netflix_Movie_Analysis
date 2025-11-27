@@ -1,12 +1,12 @@
-# 🎬 Netflix Movie Analysis
+#  Netflix Movie Analysis
 
 A Python-based data analysis project that explores Netflix movie and TV show data, including durations, genres, and yearly trends.
 
-## 📋 Project Overview
+##  Project Overview
 
 This project performs exploratory data analysis (EDA) on Netflix's catalog, examining movies and TV shows by release year, duration, and genre. It uses pandas for data manipulation, matplotlib and seaborn for visualization, and NumPy for filtering.
 
-## 🎯 Objectives
+##  Objectives
 
 - Analyze the duration distribution of Netflix movies from the 1990s
 - Identify and examine short action films in the dataset
@@ -21,7 +21,7 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - **NEW:** Visualize the top 10 directors with the most content on Netflix
 - **NEW:** Ensure y-axis values in director and genre bar charts are shown as integers for clarity
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python** - Primary programming language
 - **pandas** - Data manipulation and analysis
@@ -29,7 +29,7 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - **seaborn** - Advanced data visualization
 - **NumPy** - Numerical computing and array operations
 
-## 📊 Analysis Features
+##  Analysis Features
 
 - **Data Loading**: Reads Netflix data from CSV file using pandas
 - **1990s Movie Filtering**: Filters movies released between 1990-1999
@@ -44,7 +44,7 @@ This project performs exploratory data analysis (EDA) on Netflix's catalog, exam
 - **NEW:** Bar chart of the top 10 directors with the most content on Netflix
 - **NEW:** Integer-only y-axis ticks for genre and director bar charts for improved readability
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -74,7 +74,7 @@ pip install pandas matplotlib numpy seaborn
 python netflix_project.py
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Netflix_Movie_Analysis/
@@ -84,7 +84,7 @@ Netflix_Movie_Analysis/
 └── README.md               # Project documentation
 ```
 
-## 📈 Visualizations
+##  Visualizations
 
 The project includes:
 - **Histogram**: Distribution of movie durations for all movies, 1990s, and 2010s
@@ -108,7 +108,7 @@ The project includes:
   - Y-axis: Number of Shows/Movies (integer ticks)
   - Title: "Top 10 Directors with Most Content on Netflix"
 
-## 💡 Insights
+##  Insights
 
 This analysis provides valuable insights into:
 - How movie durations varied during the 1990s and 2010s
@@ -119,7 +119,7 @@ This analysis provides valuable insights into:
 - Popular genres on Netflix
 - **NEW:** Which directors have the most content available on Netflix
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you'd like to improve this analysis:
 
@@ -129,27 +129,27 @@ Contributions are welcome! If you'd like to improve this analysis:
 4. Push to the branch (`git push origin feature/improvement`)
 5. Open a Pull Request
 
-## 📝 License
+##  License
 
 This project is open source and available for educational purposes.
 
-## 👤 Author
+##  Author
 
 **Abdul Rafay**
 
 - GitHub: [@mrsiuuuu-x1](https://github.com/mrsiuuuu-x1)
 - LinkedIn: [Abdul Rafay](https://www.linkedin.com/in/abdul-rafay-104084352/)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Netflix for providing rich content data
 - The Python data science community for excellent tools and libraries
 - Contributors and supporters of this project
 
-## 📧 Contact
+##  Contact
 
 For questions or suggestions, please open an issue in the repository.
 
 ---
 
-⭐ If you found this project useful, please consider giving it a star!
+ If you found this project useful, please consider giving it a star!
